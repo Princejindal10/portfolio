@@ -238,40 +238,26 @@ def load_portfolio_data():
         },
         "projects": [
             {
-                "title": "AI-Powered Customer Service Platform",
-                "description": "Developed a customer service platform with generative AI capabilities to handle customer inquiries, route tickets, and provide instant responses.",
-                "tech_stack": ["MongoDB", "Express.js", "React", "Node.js", "OpenAI API", "Docker", "AWS"],
+                "title": "Personalised Youtube Recommendation System",
+                "description": "A dynamic web application that recommends YouTube videos to users based on their viewing history and preferences. The system integrates YouTube Data API with Flask backend and SQL database for storage, using user authentication (OAuth 2.0) to fetch personalized data. Real-time metrics are visualized using Power BI, and an interactive prototype UI was developed in React.",
+                "tech_stack": ["Python", "Flask", "JavaScript", "SQL", "Power BI", "OAuth 2.0", "HTML/CSS", "React"],
                 "highlights": [
-                    "Implemented RAG architecture for accurate responses",
-                    "Reduced response time by 78% compared to traditional systems",
-                    "Built CI/CD pipeline with Jenkins for seamless deployment",
-                    "Containerized application with Docker and Kubernetes"
-                ],
-                "code_snippet": "const handleAIResponse = async (query) => {\n  const embedding = await generateEmbedding(query);\n  const relevantDocs = await retrieveDocuments(embedding);\n  const prompt = constructPrompt(query, relevantDocs);\n  return await generateResponse(prompt);\n};"
+                    "Designed a Flask-based API to generate personalized video recommendations",
+                    "Used OAuth 2.0 for secure access to user’s YouTube data",
+                    "Processed user watch history and preferences to generate accurate suggestions",
+                    "Developed a prototype React frontend to showcase recommended videos dynamically"
+                ]            
             },
             {
                 "title": "DevSecOps Pipeline Automation",
-                "description": "Created a comprehensive DevSecOps pipeline that automates security testing, vulnerability scanning, and compliance checks within the CI/CD process.",
+                "description": "GradePro is an intelligent web application designed to predict students’ semester grades based on academic performance metrics, attendance, past trends, and other behavioral inputs. The system combines a React-based UI, a Node.js/Express backend, and Python ML models to deliver real-time predictions and performance insights, stored and served via MongoDB pipelines.",
                 "tech_stack": ["Jenkins", "Docker", "Kubernetes", "Terraform", "AWS", "OWASP ZAP", "SonarQube"],
                 "highlights": [
-                    "Reduced security vulnerabilities by 92% in production",
-                    "Automated compliance reporting for SOC2 requirements",
-                    "Integrated security scanning at every stage of development",
-                    "Used IaC with Terraform for consistent environment setup"
-                ],
-                "code_snippet": "pipeline {\n  agent any\n  stages {\n    stage('Security Scan') {\n      steps {\n        sh 'docker run --rm owasp/zap-cli scan --spider $TARGET_URL'\n        sh 'sonar-scanner -Dsonar.projectKey=$PROJECT_KEY'\n      }\n    }\n  }\n}"
-            },
-            {
-                "title": "Intelligent Document Processing System",
-                "description": "Built an end-to-end system for extracting, processing, and analyzing information from unstructured documents using AI/ML techniques.",
-                "tech_stack": ["React", "Node.js", "Python", "TensorFlow", "OCR", "MongoDB", "AWS Lambda"],
-                "highlights": [
-                    "Processed over 10,000 documents daily with 98% accuracy",
-                    "Used custom NER models for specialized information extraction",
-                    "Implemented serverless architecture for cost optimization",
-                    "Built React dashboard for document management and analysis"
-                ],
-                "code_snippet": "def extract_entities(document_text):\n  inputs = tokenizer(document_text, return_tensors='pt')\n  outputs = model(**inputs)\n  predictions = postprocess_ner_outputs(outputs)\n  return format_entities(predictions)"
+                    "Developed a real-time grade prediction engine using Python ML models integrated into a Node.js backend",
+                    "Designed an interactive React dashboard to help students track academic trends and receive personalized advice",
+                    "Automated the data processing pipeline, enabling continuous learning and live prediction updates",
+                    "UEnsured system scalability using Express.js API endpoints with structured data flow between frontend and backend"
+                ]
             }
         ],
         "contact": {
