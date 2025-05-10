@@ -274,24 +274,6 @@ def load_portfolio_data():
                 "code_snippet": "def extract_entities(document_text):\n  inputs = tokenizer(document_text, return_tensors='pt')\n  outputs = model(**inputs)\n  predictions = postprocess_ner_outputs(outputs)\n  return format_entities(predictions)"
             }
         ],
-        "ai_experience": [
-            {
-                "question": "What AI frameworks have you worked with?",
-                "answer": "I've worked extensively with TensorFlow and PyTorch for custom model development, Hugging Face Transformers for NLP tasks, and have built several applications using OpenAI's GPT models. I also have experience implementing RAG systems using LangChain and vector databases like Pinecone and Chroma."
-            },
-            {
-                "question": "How do you approach developing AI solutions?",
-                "answer": "I follow a systematic approach starting with understanding the business problem, evaluating whether AI is the right solution, then defining metrics for success. I prototype rapidly, iterate based on feedback, and engineer solutions with scalability in mind. I believe in building explainable AI systems with appropriate human oversight."
-            },
-            {
-                "question": "What's your experience with LLMs?",
-                "answer": "I've built several applications powered by LLMs, including custom RAG implementations, fine-tuned models for specific domains, and hybrid systems that combine rule-based approaches with generative AI. I'm particularly focused on ensuring responsible AI usage with appropriate guardrails, context handling, and prompt engineering."
-            },
-            {
-                "question": "How do you optimize AI models for production?",
-                "answer": "My approach includes quantization for smaller model footprints, distillation techniques for faster inference, caching common responses, and implementing efficient batching. I also use monitoring to track performance metrics, drift, and response quality over time. For deployment, I containerize models and use orchestration platforms for scalable inference."
-            }
-        ],
         "contact": {
             "email": "prince.jindal@example.com",
             "github": "github.com/princejindal",
