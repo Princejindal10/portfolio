@@ -41,7 +41,7 @@ custom_css = """
     }
     
     .card {
-        background-color: white;
+        background-color: black;
         border-radius: 10px;
         padding: 1.5rem;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ custom_css = """
     }
     
     .skill-card {
-        background-color: white;
+        background-color: black;
         border-radius: 8px;
         padding: 1rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
